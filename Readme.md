@@ -83,7 +83,7 @@
 
 
 
-### Collection interface [Code](CompleteTutorials/1.%20Collection%20Interface/CollectionInterfaceDemo.java)
+### Collection interface [Code](CompleteTutorials/2.%20Collection%20Interface/CollectionInterfaceDemo.java)
 
 	- it defines all the methods inherited by other collections
 	>> javap java.util.Collection
