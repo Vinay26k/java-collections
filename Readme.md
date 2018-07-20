@@ -5,14 +5,6 @@
 ![alt collections-image.png]("Collection-framework-hierarchy.png")
 
 
-(X) - X is an interface
-[X] - X is a class
-|   - extends 
-..: - implements
-
-
-
-
 
 Iterable Interface
 
