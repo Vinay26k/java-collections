@@ -7,8 +7,7 @@
 
 
 ### Iterable Interface
-	- On javap java.lang.Iterable
-<<<<<<< HEAD
+	>> javap java.lang.Iterable
 ```java
 	Compiled from "Iterable.java"
 	public interface java.lang.Iterable<T> {
@@ -17,16 +16,6 @@
 		public java.util.Spliterator<T> spliterator();
 	}
 ```
-=======
-		````java
-		Compiled from "Iterable.java"
-			public interface java.lang.Iterable<T> {
-				public abstract java.util.Iterator<T> iterator();
-				public void forEach(java.util.function.Consumer<? super T>);
-				public java.util.Spliterator<T> spliterator();
-			}
-		```
->>>>>>> 8395b35ad9e0c255bc3ecdae685fcad1325d0769
 
 	- Key things to Note:
 		- It has Iterator interface in it
@@ -41,7 +30,7 @@
 
 ### Iterator Interface
 
-	- On javap java.util.Iterator
+	>> javap java.util.Iterator
 ```java
 	Compiled from "Iterator.java"
 	public interface java.util.Iterator<E> {
@@ -61,7 +50,7 @@
 
 ### Spliterator Interface
 
-	-On javap java.util.Spliterator
+	>> javap java.util.Spliterator
 ```java
 	Compiled from "Spliterator.java"
 	public interface java.util.Spliterator<T> {
@@ -99,7 +88,7 @@
 ### Collection interface:
 
 	- it defines all the methods inherited by other collections
-	-on javap java.util.Collection
+	>> javap java.util.Collection
 ```java
 	Compiled from "Collection.java"
 	public interface java.util.Collection<E> extends java.lang.Iterable<E> {
