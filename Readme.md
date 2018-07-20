@@ -2,25 +2,7 @@
 ## [Resume]("https://vinay26k.github.io/Resume.html")
 ## Java Collections Framework - Complete Tutorials by Me [In process]
 
-					(Iterable)
-						|
-					(Collection)
-					 	|
- _________________________________________________________
- |						|								|	
- (List)				 (Queue)						   (Set)
- 	:					| :					   		    | :
- 	:					| :					   			| :
- 	:_ [ArrayList]		| :_ [PriorityQueue]	   		| :_ [HashSet]
- 	:					|								| :
- 	:					|								| :
- 	:					|_ (Deque) 						| :	
- 	:_ [LinkedList]	.........:						    | :_ [LinkedHashSet]
- 	:						 :							|
- 	:_ [Vector]				 :_ [ArrayDeque]			(SortedSet)
- 		  |													:
- 		  |													:
- 		[Stack]											 [TreeSet]
+![alt collections-image.png]("Collection-framework-hierarchy.png")
 
 
 (X) - X is an interface
@@ -33,13 +15,14 @@
 
 
 Iterable Interface
+
 	- On javap java.lang.Iterable
-		Compiled from "Iterable.java"
+		<code>Compiled from "Iterable.java"
 			public interface java.lang.Iterable<T> {
   				public abstract java.util.Iterator<T> iterator();
   				public void forEach(java.util.function.Consumer<? super T>);
   				public java.util.Spliterator<T> spliterator();
-			}
+			}</code>
 
 	- Key things to Note:
 		- It has Iterator interface in it
@@ -53,14 +36,16 @@ Iterable Interface
 
 
 Iterator Interface
+
 	- On javap java.util.Iterator
-		Compiled from "Iterator.java"
+		<code>Compiled from "Iterator.java"
 			public interface java.util.Iterator<E> {
   				public abstract boolean hasNext();
   				public abstract E next();
   				public void remove();
   				public void forEachRemaining(java.util.function.Consumer<? super E>);
-			}
+			}</code>
+
 	- Key things to Note:
 		- hasNext() => checks whether element exists next in the sequence or not
 		- next()  => returns the element and moves iterator/ cursor point to next element
