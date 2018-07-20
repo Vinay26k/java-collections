@@ -6,7 +6,7 @@
 
 
 
-### Iterable Interface [Code](1.%20Iterable%20Interface/IterableDemo.java)
+### Iterable Interface [Code](CompleteTutorials/1.%20Iterable%20Interface/IterableDemo.java)
 	>> javap java.lang.Iterable
 ```java
 	Compiled from "Iterable.java"
@@ -28,7 +28,7 @@
 
 
 
-### Iterator Interface [Code](1.%20Iterable%20Interface/IteratorDemo.java)
+### Iterator Interface [Code](CompleteTutorials/1.%20Iterable%20Interface/IteratorDemo.java)
 	>> javap java.util.Iterator
 ```java
 	Compiled from "Iterator.java"
@@ -47,7 +47,7 @@
 		- forEachRemaining() => Performs the given action for each remaining element until all elements have been processed or the action throws an exception.
 
 
-### Spliterator Interface [Code](1.%20Iterable%20Interface/SpliteratorDemo.java)
+### Spliterator Interface [Code](CompleteTutorials/1.%20Iterable%20Interface/SpliteratorDemo.java)
 	>> javap java.util.Spliterator
 ```java
 	Compiled from "Spliterator.java"
@@ -83,7 +83,7 @@
 
 
 
-### Collection interface [Code](1.%20Collection%20Interface/CollectionInterfaceDemo.java)
+### Collection interface [Code](CompleteTutorials/1.%20Collection%20Interface/CollectionInterfaceDemo.java)
 
 	- it defines all the methods inherited by other collections
 	>> javap java.util.Collection
