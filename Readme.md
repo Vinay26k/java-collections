@@ -2,11 +2,11 @@
 ## [Resume]("https://vinay26k.github.io/Resume.html")
 ## Java Collections Framework - Complete Tutorials by Me [In process]
 
-![alt collections-image.png]("Collection-framework-hierarchy.png")
+![alt collections-image.png](Collection-framework-hierarchy.png)
 
 
 
-Iterable Interface
+### Iterable Interface
 
 	- On javap java.lang.Iterable
 		<code>Compiled from "Iterable.java"
@@ -27,7 +27,7 @@ Iterable Interface
 
 
 
-Iterator Interface
+### Iterator Interface
 
 	- On javap java.util.Iterator
 		<code>Compiled from "Iterator.java"
@@ -45,9 +45,10 @@ Iterator Interface
 		- forEachRemaining() => Performs the given action for each remaining element until all elements have been processed or the action throws an exception.
 
 
-Spliterator Interface
+### Spliterator Interface
+
 	-On javap java.util.Spliterator
-		Compiled from "Spliterator.java"
+		<code>Compiled from "Spliterator.java"
 			public interface java.util.Spliterator<T> {
   				public static final int ORDERED;
   				public static final int DISTINCT;
@@ -69,7 +70,8 @@ Spliterator Interface
   				public boolean hasCharacteristics(int);
   				public java.util.Comparator<? super T> 
   					getComparator();
-			}
+			}</code>
+
 	- Key things to Note:
 		- SIZED – if it’s capable of returning an exact numer of elements with the estimateSize() method
 		- SORTED – if it’s iterating through a sorted source
@@ -82,10 +84,11 @@ Spliterator Interface
 
 
 
-Collection interface:
+### Collection interface:
+
 	- it defines all the methods inherited by other collections
 	-on javap java.util.Collection
-		Compiled from "Collection.java"
+		<code>Compiled from "Collection.java"
 			public interface java.util.Collection<E> extends java.lang.Iterable<E> {
   				public abstract int size();
   				public abstract boolean isEmpty();
@@ -106,7 +109,8 @@ Collection interface:
   				public java.util.Spliterator<E> spliterator();
   				public java.util.stream.Stream<E> stream();
   				public java.util.stream.Stream<E> parallelStream();
-			}
+			}</code>
+
 	- Key things to Note:
 		- size() - size of the collection
 		- isEmpty() - check empty or not
@@ -126,4 +130,3 @@ Collection interface:
 		- (Spliterator) spliterator() -> implements trySplit(), tryAdvance(), forEachRemaining()..
 		- (java.util.stream.Stream) stream() -> stream object to perform stream operations
 		- parallelStream() -> similar to stream object
-
