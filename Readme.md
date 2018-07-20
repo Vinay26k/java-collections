@@ -8,6 +8,7 @@
 
 ### Iterable Interface
 	- On javap java.lang.Iterable
+<<<<<<< HEAD
 ```java
 	Compiled from "Iterable.java"
 	public interface java.lang.Iterable<T> {
@@ -16,6 +17,16 @@
 		public java.util.Spliterator<T> spliterator();
 	}
 ```
+=======
+		````java
+		Compiled from "Iterable.java"
+			public interface java.lang.Iterable<T> {
+				public abstract java.util.Iterator<T> iterator();
+				public void forEach(java.util.function.Consumer<? super T>);
+				public java.util.Spliterator<T> spliterator();
+			}
+		```
+>>>>>>> 8395b35ad9e0c255bc3ecdae685fcad1325d0769
 
 	- Key things to Note:
 		- It has Iterator interface in it
