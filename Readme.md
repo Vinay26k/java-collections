@@ -9,12 +9,14 @@
 ### Iterable Interface
 
 	- On javap java.lang.Iterable
-		<code>Compiled from "Iterable.java"
+		```
+		Compiled from "Iterable.java"
 			public interface java.lang.Iterable<T> {
   				public abstract java.util.Iterator<T> iterator();
   				public void forEach(java.util.function.Consumer<? super T>);
   				public java.util.Spliterator<T> spliterator();
-			}</code>
+			}
+			```
 
 	- Key things to Note:
 		- It has Iterator interface in it
@@ -30,13 +32,15 @@
 ### Iterator Interface
 
 	- On javap java.util.Iterator
-		<code>Compiled from "Iterator.java"
+		```
+		Compiled from "Iterator.java"
 			public interface java.util.Iterator<E> {
   				public abstract boolean hasNext();
   				public abstract E next();
   				public void remove();
   				public void forEachRemaining(java.util.function.Consumer<? super E>);
-			}</code>
+			}
+			```
 
 	- Key things to Note:
 		- hasNext() => checks whether element exists next in the sequence or not
@@ -48,7 +52,8 @@
 ### Spliterator Interface
 
 	-On javap java.util.Spliterator
-		<code>Compiled from "Spliterator.java"
+		```
+		Compiled from "Spliterator.java"
 			public interface java.util.Spliterator<T> {
   				public static final int ORDERED;
   				public static final int DISTINCT;
@@ -70,7 +75,8 @@
   				public boolean hasCharacteristics(int);
   				public java.util.Comparator<? super T> 
   					getComparator();
-			}</code>
+			}
+			```
 
 	- Key things to Note:
 		- SIZED – if it’s capable of returning an exact numer of elements with the estimateSize() method
@@ -88,7 +94,8 @@
 
 	- it defines all the methods inherited by other collections
 	-on javap java.util.Collection
-		<code>Compiled from "Collection.java"
+		```
+		Compiled from "Collection.java"
 			public interface java.util.Collection<E> extends java.lang.Iterable<E> {
   				public abstract int size();
   				public abstract boolean isEmpty();
@@ -109,7 +116,8 @@
   				public java.util.Spliterator<E> spliterator();
   				public java.util.stream.Stream<E> stream();
   				public java.util.stream.Stream<E> parallelStream();
-			}</code>
+			}
+			```
 
 	- Key things to Note:
 		- size() - size of the collection
