@@ -1,0 +1,38 @@
+Map Interface
+
+##########################################
+#                                        #
+#             Map Interface              #
+#        i.e., java.util.Map             #
+#                                        #
+##########################################
+
+Map
+    - container object that stores collection of key-value pairs
+    - keys are like indexes in List but in Map.
+    - keys can be any objects
+    - map cannot contain duplicate keys
+    - each key maps to a single value
+    - key and its correspoding value form an entry stored in a map
+
+Map methods:
+    - int size()
+    - void clear()
+    - boolean isEmpty()
+    - V put(K key, V value)
+    - void putAll(m:Map<?extends K, ? extends V>)
+    - boolean containsKey(Object key)
+    - boolean containsValue(Object value)
+    - V get(Object key)
+    - Set<K> keySet()
+    - V remove(Object key)
+    - Collection <V> values()
+    - Set<Map.Entry<K,V>> entrySet()
+
+Map Hierarchy:
+    - Map <- SortedMap <-NavigableMap [Similar to Set ds][all these are interfaces]
+    - AbstractMap implements Map [AbstractMap is a class]
+    - AbstractMap <- HashMap <- LinkedHashMap (extends and all are classes)
+    --- TreeMap extends AbstractMap implements NavigableMap, java.lang.Cloneable, java.io.Serializable
+    --- HashMap extends AbstractMap implements Map, java.lang.Cloneable, java.io.Serializable
+    --- LinkedHashMap extends HashMap implements Map

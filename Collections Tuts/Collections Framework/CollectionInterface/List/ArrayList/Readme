@@ -1,0 +1,41 @@
+ArrayList class extends AbstractList class, 
+implements[from java.util] List Interface, RandomAccess,
+implements[from java.lang] Cloneable,
+implements[from java.io] Serializable
+
+##########################################
+#                                        #
+#            ArrayList Class             #
+#        i.e., java.util.ArrayList       #
+#                                        #
+##########################################
+
+ArrayList class extends AbstractList, implements List Interface
+    - java.util package
+    - supports dynamic arrays that can grow as needed
+    - ArrayList are created with initial size
+    - When size exceeded, collection is automatically enlarged
+    - When objects removed, array shrinks
+
+ArrayList Constructors:
+    - ArrayList() - empty ArrayList with initial capacity[10 ele]
+    - ArrayList(int capacity) - creates ArrayList with specified initial capacity
+    - ArrayList(Collection c) - creates ArrayList that is initialized with elements of Collection c
+
+ArrayList Methods:
+    - boolean add(Object o)
+    - void add(int index, Object ele)
+    - boolean addAll(Collection c)
+    - boolean addAll(int index, Collection c)
+    - Object remove(int index)
+    - Object remove(Object o)
+    - Object clone()
+    - int size()
+    - void clear()
+    - boolean contains(Object o)
+    - Object get(int index)
+    - int indexOf(Object o)
+    - int lastIndexOf(Object o)
+    - void ensureCapacity(int minCapacity)
+    - Object set(int index, Object ele)
+    - void trimToSize()

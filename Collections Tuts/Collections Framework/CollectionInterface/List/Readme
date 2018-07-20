@@ -1,0 +1,68 @@
+ListIterator Interface extends Iterator Interface
+
+##########################################
+#                                        #
+#          ListIterator Interface        #
+#        i.e., java.util.ListIterator    #
+#                                        #
+##########################################
+
+ListIterator
+    - has no current element, its cursor position lies between 
+    element that would be returned by call to previous() and
+    element that would be returned by call to next()
+    - remove() and set(Object o) aren't defined in terms of cursor position.
+    They always perform operations on last element returned by call to next() or previous()
+
+ListIterator Interface Methods:
+    [NPIRSA]
+    - boolean hasNext()
+    - Object next()
+    - boolean hasPrevious()
+    - Object previous()
+    - int nextIndex()
+    - int previousIndex()
+    - void remove()
+    - void set(Object o)
+    - void add(Object o)
+
+# N - next, hasNext
+# P - previous, hasPrevious
+# I - nextIndex, previousIndex
+# R - remove
+# S - set
+# A - add
+
+***[ no remove all method coz cursor or iterator can't perform that operation ]
+
+
+List Interface extends Collection Interface
+
+##########################################
+#                                        #
+#              List Interface            #
+#           i.e., java.util.List         #
+#                                        #
+##########################################
+
+List Interface
+    - ordered collection with duplicates allowed
+
+List Interface sub-classes:
+    - ArrayList
+    - Vector
+    - LinkedList
+    - Stack
+
+List Interface Methods:
+    [ARGSLio]
+    - boolean add(int index, Object o)
+    - boolean addAll(int index, Collection c)
+    - Object remove(int index)
+    - Object get(int index)
+    - Object set(int index, Object o)
+    - int indexOf(Object o)
+    - int lastIndexOf(Object o)
+    - ListIterator listIterator()
+    - ListIterator listIterator(int start_index)
+    - List subList(int start_index, int end_index)

@@ -1,0 +1,63 @@
+Collection Interface extends Iterable Interface
+
+##########################################
+#                                        #
+#     Little about Iterable Interface    #
+#        i.e., java.lang.Iterable        #
+#                                        #
+##########################################
+
+Iterable Interface
+    - Iterator iterator() -> to traverse elements of any collection
+
+Iterable Interface Methods
+    [NR]
+    - boolean hasNext() - returns true if iterator has more elements to traverse
+    - Object next() - returns next element from this iterator
+    - void remove() - removes last element obtained using next method
+# N - next, hasNext
+# R - remove
+
+
+##########################################
+#                                        #
+#          Collection Interface          #
+#        i.e., java.util.Collection      #
+#                                        #
+##########################################
+
+
+Collection Interface
+    - Sets   -> store group of non-duplicate elements.
+    - Lists  -> store an ordered collection of elements.
+    - Queues -> Store objects that are processed in FIFO
+    - Maps   -> efficient ds for quickly searching an element using key
+
+AbstractCollection class provides partial implementation of Collection Interface.
+    - It implements all but size() and iterator() methods.
+
+Collection Interface Methods:
+    [ACRcliEstAhc]
+    - boolean add(Object o)
+    - boolean addAll(Collection c)
+    - boolean contains(Object o)
+    - boolean containsAll(Collection c)
+    - Object remove(int i)
+    - boolean removeAll(Collection c)
+    - boolean retainAll(Collection c)
+    - void clear()
+    - boolean isEmpty()
+    - int size()
+    - object [] toArray()
+    - int hashCode()
+
+# A  - add, addAll
+# C  - contains, containsAll
+# R  - remove, removeAll, retainAll
+# cl - clear
+# iE - isEmpty
+# s  - size
+# tA - toArray
+# hc - hashCode
+
+

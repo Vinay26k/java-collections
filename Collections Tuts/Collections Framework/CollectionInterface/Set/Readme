@@ -1,0 +1,35 @@
+Set extends Collection
+
+##########################################
+#                                        #
+#            Set Interface               #
+#        i.e., java.util.ArrayList       #
+#                                        #
+##########################################
+
+Set Interface
+    - efficient ds for storing and processing non-duplicate elements
+
+Set sub-classes:
+    - HashSet
+    - TreeSet
+    - LinkedHashSet
+AbstractSet class provides implementations for
+    - equals()
+    - hashCode()
+    - hashCode of a set is the sum of hashCode of all elements in the set
+    - size() and iterator() aren't implemented in AbstractSet
+
+SortedSet Interface
+    - sub-interface of Set, which guarantees that elements in set are Sorted
+    - provides the methods
+        - first()
+        - last()
+        - headSet(toElement) and tailSet(fromElement)
+NavigableSet Interface extends SortedSet
+    - provides navigation methods:
+        - lower(e)   -> returns elements less than
+        - floor(e)   -> returns elements less than or equals
+        - ceiling(e) -> returns elements greater than or equals
+        - higher(e)  -> return elements greater than
+

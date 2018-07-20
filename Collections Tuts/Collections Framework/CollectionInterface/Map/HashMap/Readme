@@ -1,0 +1,19 @@
+##########################################
+#                                        #
+#              HashMap Class             #
+#        i.e., java.util.HashMap         #
+#                                        #
+##########################################
+
+HashMap Class
+    - efficient for locating value, inserting and deleting an entry
+    - entries aren't ordered
+
+public class HashMap <K,V> extends AbstractMap<K,V> implements Map<K,V>, Cloneable, Serializable
+
+HashMap Constructors:
+    - HashMap()
+    - HashMap(int initialCapacity)
+    - HashMap(int initialCapacity, float loadFactor)
+    - HashMap(Map<? extends K, ? extends V> m)
+
