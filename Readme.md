@@ -132,7 +132,7 @@
 		- (java.util.stream.Stream) stream() -> stream object to perform stream operations
 		- parallelStream() -> similar to stream object
 
-### List Interface [Code](CompleteTutorials/3.%20List%20Interface/ListInterfaceDemo.java)
+### List interface [Code](CompleteTutorials/3.%20List%20Interface/ListInterfaceDemo.java)
 	>> javap java.util.List;
 ```java
 	Compiled from "List.java"
@@ -196,3 +196,15 @@
 			- subList(startIndex, endIndex)
 			- of() - combine muliple objects to umodifiablelist
 			- copyOf() - create copyOf umodifiablelist
+
+### Comparable interface [Code](CompleteTutorials/0.%20Comparable%20Interface/ComparableInterfaceDemo.java)
+	>> javap java.lang.Comparable;
+```java
+	Compiled from "Comparable.java"
+	public interface java.lang.Comparable<T> {
+  		public abstract int compareTo(T);
+	}
+```
+
+	- Key things to Note:
+		- abstract method compareTo(Object) -> must be implemented by any class implementing it.
