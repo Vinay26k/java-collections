@@ -208,3 +208,59 @@
 
 	- Key things to Note:
 		- abstract method compareTo(Object) -> must be implemented by any class implementing it.
+
+### ArrayList Class
+	>> javap java.util.ArrayList;
+```java
+	Compiled from "ArrayList.java"
+	public class java.util.ArrayList<E> extends java.util.AbstractList<E> implements java.util.List<E>, java.util.RandomAccess, java.lang.Cloneable, java.io.Serializable {
+		transient java.lang.Object[] elementData;
+  		public java.util.ArrayList(int);
+  		public java.util.ArrayList();
+  		public java.util.ArrayList(java.util.Collection<? extends E>);
+  		public void trimToSize();
+  		public void ensureCapacity(int);
+  		public int size();
+  		public boolean isEmpty();
+  		public boolean contains(java.lang.Object);
+  		public int indexOf(java.lang.Object);
+  		public int lastIndexOf(java.lang.Object);
+  		public java.lang.Object clone();
+  		public java.lang.Object[] toArray();
+  		public <T> T[] toArray(T[]);
+  		E elementData(int);
+  		static <E> E elementAt(java.lang.Object[], int);
+  		public E get(int);
+  		public E set(int, E);
+  		public boolean add(E);
+  		public void add(int, E);
+  		public E remove(int);
+  		public boolean remove(java.lang.Object);
+  		public void clear();
+  		public boolean addAll(java.util.Collection<? extends E>);
+  		public boolean addAll(int, java.util.Collection<? extends E>);
+  		protected void removeRange(int, int);
+  		public boolean removeAll(java.util.Collection<?>);
+  		public boolean retainAll(java.util.Collection<?>);
+  		boolean batchRemove(java.util.Collection<?>, boolean, int, int);
+  		public java.util.ListIterator<E> listIterator(int);
+  		public java.util.ListIterator<E> listIterator();
+  		public java.util.Iterator<E> iterator();
+  		public java.util.List<E> subList(int, int);
+  		public void forEach(java.util.function.Consumer<? super E>);
+  		public java.util.Spliterator<E> spliterator();
+  		public boolean removeIf(java.util.function.Predicate<? super E>);
+  		boolean removeIf(java.util.function.Predicate<? super E>, int, int);
+  		public void replaceAll(java.util.function.UnaryOperator<E>);
+  		public void sort(java.util.Comparator<? super E>);
+  		void checkInvariants();
+  		static int access$000(java.util.ArrayList);
+  		static {};
+	}
+```
+
+	- Key things to Note:
+		- ArrayList(int size) - how much initial capacity to be allotted
+		- trimToSize() - after elements are filled, remaining capacity can be removed by this method
+		- ensureCapacity(int) - ArrayList resizes automatically, to make sure of good performance at once we can ensure with minimum capacity there by decreasing arraylist resizing frequency
+		- removeRange(int,int) - protected method can't be used, instead subList(int,int).clear()
